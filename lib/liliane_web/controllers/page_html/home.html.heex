@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<!-- from=#38617f via=#1c4868 to=#5d92b9 green0=#014e3c green1=#2c7f6c green2=#518f81 -->
+<!-- blue1=#02487e blue2=#0365b0 blue3=#33ccff green1=#014e3c green2=#2c7f6c green3=#518f81 -->
 <html lang="en">
-  <header class="grid grid-cols-3 border border-gray-300 px-4 py-2 items-center"> 
+  <header class="grid grid-cols-3 border border-gray-300 p-4 items-center fixed w-full z-50 top-0 bg-white"> 
     <h1 class="text-[2rem] bg-clip-text text-transparent bg-gradient-to-r from-[#38617f] to-[#5d92b9] font-bold font-['Bpmf_Huninn']">
       &ltLiliane Reis&gt
     </h1>
 
     <div class="flex justify-self-center items-center gap-3 font-semibold font-['Chakra_Petch'] text-gray-600">
-      <p>Sobre</p>
+      <a href="#aboutme">Sobre</a>
       <p>Projeto</p>
       <p>Experiência</p>
       <p>Contato</p>
@@ -16,21 +16,75 @@
     <img class="w-auto h-6 justify-self-end" src="/images/info.png"/>
   </header>
 
-  <section id="body" class="flex flex-col mt-20 p-16 w-full h-screen">
-    <h2 class="text-[2rem] font-semibold font-['Roboto_Mono'] text-[#014e3c]">
-      OLÁ, EU SOU
-    </h2>
+  <section id="body" class="flex mt-20 p-16 w-full gap-8 h-screen">
+    <div class="flex flex-col w-[60%]">
+      <h2 class="text-[2rem] font-semibold font-['Roboto_Mono'] text-[#014e3c]">
+        OLÁ, EU SOU
+      </h2>
 
-    <div class="flex items-center">
-      <h1 class="pl-4 text-[6rem] bg-clip-text text-transparent bg-gradient-to-r from-[#145c4b] to-[#90cdbf] font['Roboto_Mono] font-bold">
-        Liliane Reis
-      </h1>
+      <div class="flex items-center -mt-8">
+        <h1 class="pl-2 text-[6rem] bg-clip-text text-transparent bg-gradient-to-r from-[#014e3c] to-[#518f81] font['Roboto_Mono] font-bold">
+          Liliane Reis
+        </h1>
 
-      <h1 class="pl-[1rem] animate-bounce text-[8rem] text-[#90cdbf] font-bold">.</h1>
+        <h1 class="pl-2 animate-bounce text-[8rem] text-[#518f81] font-bold">.</h1>
+      </div>
+
+      <h3 class="-mt-4 text-xl font-semibold text-gray-600 font-['Roboto_Mono']">
+        Consultora Ademicon & Formada em Pedagogia
+      </h3>
+
+      <div class="flex mt-[3.5rem] pl-12 gap-4">
+        <button class="py-5 w-[13rem] font-semibold rounded-2xl bg-gradient-to-r from-[#02487e] to-[#0365b0] text-white">
+          Ver Projetos
+        </button>
+        <button class="font-semibold border-2 border-gray-300 py-5 w-[13rem] rounded-2xl">
+          Baixar currículo
+        </button>
+      </div>
     </div>
 
-    <h3 class="-mt-4 text-xl font-semibold text-gray-600 font-['Roboto_Mono']">
-      Consultora Ademicon & Formada em Pedagogia
-    </h3>
+    <div class="flex justify-end w-[40%] overflow-hidden transition-transform duration-300 hover:scale-110 p-8">
+      <img src="/images/picture.jpeg" alt="picture" class="max-h-[75%] rounded-full object-cover border-4 border-gray-800 shadow-2xl"/>
+    </div>
+  </section>
+
+
+
+  <section id="aboutme" class="flex flex-col pl-12 mt-[10rem]">
+    <h1 class="font-bold font-['Roboto_Mono'] text-[4rem] text-gray-950">
+      Sobre Mim
+    </h1>
+
+    <hr class="border-t border-2 -mt-1 w-[10%] border-[#014e3c] mb-4">  
+
+    <div class="flex gap-14 pr-4">
+      <pre class="text-lg w-[47%] break-words whitespace-pre-wrap font-medium font-['Alan_Sans'] text-gray-600 aborder-red-600 aborder-4">
+Conheça minha jornada.
+
+Sou Liliane Ferreira dos Reis, pedagoga formada pela UNOPAR/Pitágoras em 2022, com experiência sólida em educação infantil, atendimento ao público e suporte administrativo. Ao longo da minha trajetória, atuei como monitora no Colégio Sesi da Indústria, auxiliando turmas do 2º ano no desenvolvimento da leitura e escrita, e como assistente de alfabetização na Escola M. Margarida Soares Guimarães, preparando materiais didáticos e acompanhando o progresso dos alunos.
+
+Além da área educacional, desenvolvi habilidades comerciais e de relacionamento com clientes nas empresas Betim Placas e Deva Concessionária Iveco, onde gerenciei vendas, controle de estoque e atendimento pós‑venda. Possuo ainda formação complementar em montagem e manutenção de microcomputadores (SENAI) e Libras básico, ampliando minha capacidade de oferecer suporte técnico e comunicação inclusiva.      
+      </pre>
+
+
+      <div class="flex flex-col w-[47%] aborder-red-600 aborder-4 mt-8">
+        <h3 class="font-bold font-['Roboto_Mono'] text-xl mb-[4rem]">Habilidades Sociais</h3>
+
+        <div class="grid grid-cols-3 *:bg-gray-100 font-mediun text-center font-['Alan_Sans'] gap-x-4 gap-y-8 px-4 *:py-4 *:rounded-xl *:border *:border-gray-300">
+          <span>Consultoria</span>
+          <span>Pedagogia</span>
+          <span>Vendas</span>
+
+          <span>Atendimento</span>
+          <span>Alfabetização</span>
+          <span>Administração</span>
+
+          <span>Tecnologia</span>
+          <span>Libras</span>
+          <span>Comunicação</span>
+        </div>
+      </div>
+    </div>
   </section>
 </html>

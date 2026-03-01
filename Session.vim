@@ -15,14 +15,20 @@ else
 endif
 badd +1 lib/liliane_web/router.ex
 badd +7 lib/liliane_web/controllers/page_controller.ex
-badd +24 lib/liliane_web/controllers/page_html/home.html.heex
-badd +9 lib/liliane_web/components/layouts/root.html.heex
-badd +0 .gitignore
+badd +20 lib/liliane_web/controllers/page_html/home.html.heex
+badd +33 lib/liliane_web/components/layouts/root.html.heex
+badd +1 .gitignore
 badd +12 assets/tailwind.config.js
 badd +19 /mnt/Arquivos/ElixirWorks/MaxGallery/lib/max_gallery_web/controllers/page_html/home.html.heex
 badd +35 /mnt/Arquivos/ElixirWorks/MaxGallery/lib/max_gallery_web/live/editor_live.html.heex
+badd +5 nixpacks.toml
+badd +21 config/config.exs
+badd +1 config/prod.exs
+badd +12 config/runtime.exs
+badd +1 lib/liliane_web/endpoint.ex
 argglobal
 %argdel
+tabnew +setlocal\ bufhidden=wipe
 tabnew +setlocal\ bufhidden=wipe
 tabnew +setlocal\ bufhidden=wipe
 tabnew +setlocal\ bufhidden=wipe
@@ -39,7 +45,7 @@ setlocal foldnestmax=20
 setlocal foldenable
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 2 - ((1 * winheight(0) + 14) / 28)
+let s:l = 2 - ((1 * winheight(0) + 11) / 22)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -68,7 +74,6 @@ normal! 038|
 tabnext
 edit lib/liliane_web/controllers/page_html/home.html.heex
 argglobal
-balt /mnt/Arquivos/ElixirWorks/MaxGallery/lib/max_gallery_web/controllers/page_html/home.html.heex
 setlocal foldmethod=manual
 setlocal foldexpr=0
 setlocal foldmarker={{{,}}}
@@ -78,7 +83,12 @@ setlocal foldminlines=1
 setlocal foldnestmax=20
 setlocal foldenable
 silent! normal! zE
+sil! 4,17fold
+sil! 19,52fold
+sil! 54,89fold
 let &fdl = &fdl
+19
+sil! normal! zo
 let s:l = 1 - ((0 * winheight(0) + 14) / 28)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
@@ -88,7 +98,6 @@ normal! 0
 tabnext
 edit lib/liliane_web/components/layouts/root.html.heex
 argglobal
-balt lib/liliane_web/controllers/page_html/home.html.heex
 setlocal foldmethod=manual
 setlocal foldexpr=0
 setlocal foldmarker={{{,}}}
@@ -99,12 +108,32 @@ setlocal foldnestmax=20
 setlocal foldenable
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 27 - ((25 * winheight(0) + 14) / 28)
+let s:l = 31 - ((24 * winheight(0) + 14) / 28)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 27
+keepjumps 31
 normal! 04|
+tabnext
+edit config/runtime.exs
+argglobal
+balt lib/liliane_web/endpoint.ex
+setlocal foldmethod=manual
+setlocal foldexpr=0
+setlocal foldmarker={{{,}}}
+setlocal foldignore=#
+setlocal foldlevel=0
+setlocal foldminlines=1
+setlocal foldnestmax=20
+setlocal foldenable
+silent! normal! zE
+let &fdl = &fdl
+let s:l = 36 - ((10 * winheight(0) + 11) / 22)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 36
+normal! 0
 tabnext 3
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
