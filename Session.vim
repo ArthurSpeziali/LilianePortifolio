@@ -15,7 +15,7 @@ else
 endif
 badd +1 lib/liliane_web/router.ex
 badd +7 lib/liliane_web/controllers/page_controller.ex
-badd +67 lib/liliane_web/controllers/page_html/home.html.heex
+badd +140 lib/liliane_web/controllers/page_html/home.html.heex
 badd +33 lib/liliane_web/components/layouts/root.html.heex
 badd +1 .gitignore
 badd +12 assets/tailwind.config.js
@@ -26,6 +26,9 @@ badd +21 config/config.exs
 badd +1 config/prod.exs
 badd +12 config/runtime.exs
 badd +1 lib/liliane_web/endpoint.ex
+badd +10 ~/.config/nvim/init.vim
+badd +3 ~/.config/nvim/lua/lsp.lua
+badd +3 ~/.config/nvim/lua/nvim-lsp.lua
 argglobal
 %argdel
 tabnew +setlocal\ bufhidden=wipe
@@ -45,7 +48,7 @@ setlocal foldnestmax=20
 setlocal foldenable
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 2 - ((1 * winheight(0) + 16) / 32)
+let s:l = 2 - ((1 * winheight(0) + 15) / 31)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -65,7 +68,7 @@ setlocal foldnestmax=20
 setlocal foldenable
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 7 - ((6 * winheight(0) + 16) / 32)
+let s:l = 7 - ((6 * winheight(0) + 15) / 31)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -84,19 +87,21 @@ setlocal foldnestmax=20
 setlocal foldenable
 silent! normal! zE
 sil! 4,19fold
-sil! 21,54fold
-sil! 56,89fold
-sil! 91,131fold
+sil! 21,53fold
+sil! 55,88fold
+sil! 90,131fold
 sil! 133,260fold
 sil! 262,290fold
 sil! 292,295fold
 let &fdl = &fdl
-let s:l = 4 - ((0 * winheight(0) + 16) / 32)
+133
+sil! normal! zo
+let s:l = 1 - ((0 * winheight(0) + 15) / 31)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 4
-normal! 01|
+keepjumps 1
+normal! 0
 tabnext
 edit lib/liliane_web/components/layouts/root.html.heex
 argglobal
@@ -110,7 +115,7 @@ setlocal foldnestmax=20
 setlocal foldenable
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 31 - ((29 * winheight(0) + 16) / 32)
+let s:l = 31 - ((27 * winheight(0) + 15) / 31)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -130,7 +135,7 @@ setlocal foldnestmax=20
 setlocal foldenable
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 36 - ((15 * winheight(0) + 16) / 32)
+let s:l = 36 - ((14 * winheight(0) + 15) / 31)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt

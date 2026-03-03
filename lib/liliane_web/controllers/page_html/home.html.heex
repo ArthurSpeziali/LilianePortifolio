@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <!-- blue1=#02487e blue2=#0365b0 blue3=#33ccff green1=#014e3c green2=#2c7f6c green3=#518f81 -->
 <html lang="en">
-  <header class="grid grid-cols-3 border border-gray-300 p-4 items-center fixed w-full z-50 top-0 bg-white"> 
+  <header class="lg:grid lg:grid-cols-3 flex justify-between border border-gray-300 p-4 items-center fixed w-full z-50 top-0 bg-white"> 
     <a href="#body" class="text-[2rem] bg-clip-text text-transparent bg-gradient-to-r from-[#38617f] to-[#5d92b9] font-bold font-['Bpmf_Huninn']">
       &ltLiliane Reis&gt
     </a>
 
-    <div class="flex justify-self-center items-center gap-4 font-semibold font-['Chakra_Petch'] text-gray-600">
+    <div class="lg:flex hidden justify-self-center items-center gap-4 font-semibold font-['Chakra_Petch'] text-gray-600">
       <a href="#aboutme">Sobre</a>
       <a href="#jobs">Trabalhos</a>
       <a href="#exp">Experiência</a>
@@ -18,39 +18,38 @@
     </a>
   </header>
 
-  <section id="body" class="flex mt-20 p-16 w-full gap-8 h-screen scroll-mt-24">
-    <div class="flex flex-col w-[60%]">
-      <h2 class="text-[2rem] font-semibold font-['Roboto_Mono'] text-[#014e3c]">
+  <section id="body" class="flex mt-20 p-16 w-full gap-8 h-screen scroll-mt-24 lg:static relative lg:overflow-visible overflow-hidden">
+    <div class="flex flex-col lg:w-[60%] w-full">
+      <h2 class="lg:text-[2rem] text-[1.7rem] font-semibold font-['Roboto_Mono'] text-[#014e3c]">
         OLÁ, EU SOU
       </h2>
 
       <div class="flex items-center -mt-8">
-        <h1 class="pl-2 text-[6rem] bg-clip-text text-transparent bg-gradient-to-r from-[#014e3c] to-[#518f81] font['Roboto_Mono] font-bold">
+        <h1 class="lg:leading-normal leading-none pl-2 lg:text-[6rem] text-[5rem] bg-clip-text text-transparent bg-gradient-to-r from-[#014e3c] to-[#518f81] font['Roboto_Mono] font-bold lg:text-start text-end">
           Liliane Reis
         </h1>
 
-        <h1 class="pl-2 animate-bounce text-[8rem] text-[#518f81] font-bold">.</h1>
+        <h1 class="pl-2 animate-bounce text-[8rem] text-[#518f81] font-bold lg:mt-0 mt-16">.</h1>
       </div>
 
-      <h3 class="-mt-4 text-xl font-semibold text-gray-600 font-['Roboto_Mono']">
+      <h3 class="-mt-4 lg:text-xl lg:text-start text-center text-lg font-semibold text-gray-600 font-['Roboto_Mono']">
         Consultora Ademicon & Formada em Pedagogia
       </h3>
 
-      <div class="flex mt-[3.5rem] pl-12 gap-4">
+      <div class="flex mt-[3.5rem] lg:pl-12 gap-4">
         <a href="#jobs" class="py-5 text-center w-[13rem] font-semibold rounded-2xl bg-gradient-to-r from-[#02487e] to-[#0365b0] text-white">
           Ver Trabalhos
         </a>
-        <a href="https://raw.github.com/ArthurSpeziali/LilianePortifolio/main/Curriculo-Liliane.pdf" class="text-center font-semibold border-2 border-gray-300 py-5 w-[13rem] rounded-2xl">
+        <a href="https://raw.github.com/ArthurSpeziali/LilianePortifolio/main/Curriculo-Liliane.pdf" class="text-center bg-gray-200 font-semibold border-2 border-gray-400 py-5 w-[13rem] rounded-2xl active:bg-gray-400 hover:underline">
           Baixar currículo
         </a>
       </div>
     </div>
 
-    <div class="flex justify-end w-[40%] overflow-hidden transition-transform duration-300 hover:scale-110 p-8">
-      <img src="/images/picture.jpeg" alt="picture" class="max-h-[75%] rounded-full object-cover border-4 border-gray-800 shadow-2xl"/>
+    <div class="flex lg:z-0 -z-10 lg:w-[40%] w-[70%] lg:static lg:p-8 absolute top-[40%] -right-[30%] justify-end transform duration-300 hover:scale-110">
+      <img src="/images/picture.jpeg" alt="picture" class="lg:max-h-[75%] h-full rounded-full object-cover border-4 border-gray-800 shadow-2xl"/>
     </div>
   </section>
-
 
 
   <section id="aboutme" class="flex flex-col pl-12 mt-[2rem] scroll-mt-24">
@@ -60,18 +59,18 @@
 
     <hr class="border-t border-2 -mt-1 w-[10%] border-[#014e3c] mb-16">  
 
-    <div class="flex gap-14 pr-4">
-      <pre class="text-lg w-[47%] break-words whitespace-pre-wrap font-medium font-['Alan_Sans'] text-gray-600 aborder-red-600 aborder-4">
+    <div class="flex lg:flex-row flex-col lg:gap-14 gap-10 pr-6">
+      <pre class="text-lg lg:w-[47%] w-full pr-4 break-words whitespace-pre-wrap font-medium font-['Alan_Sans'] text-gray-600">
 Sou Liliane Ferreira dos Reis, pedagoga formada pela UNOPAR/Pitágoras em 2022, com atuação na área educacional, atendimento ao público e suporte administrativo. Ao longo da minha trajetória, atuei como monitora no Colégio Sesi da Indústria, auxiliando turmas do ensino médio com as regulamentações escolares, e como assistente de alfabetização na Escola M. Margarida Soares Guimarães, ajudando no desenvolvimento das atividades e acompanhando o progresso dos alunos.
 
 Além da área educacional, desenvolvi habilidades comerciais e de relacionamento com clientes nas empresas Deva Concessionária Iveco e Betim Placas, onde gerenciei vendas, controle de estoque e atendimento pós‑venda. Possuo ainda formação complementar em montagem e manutenção de microcomputadores (SENAI) e Libras básico, ampliando minha capacidade de oferecer suporte ao cliente e comunicação inclusiva.      
       </pre>
 
 
-      <div class="flex flex-col w-[47%] aborder-red-600 aborder-4 mt-8">
-        <h3 class="font-bold font-['Roboto_Mono'] text-xl mb-[4rem]">Habilidades Sociais</h3>
+      <div class="flex flex-col lg:w-[47%] lg:mt-8">
+        <h3 class="font-bold font-['Roboto_Mono'] text-xl lg:mb-[4rem] mb-[2rem]">Habilidades Sociais</h3>
 
-        <div class="grid grid-cols-3 *:bg-gray-100 font-mediun text-center font-['Alan_Sans'] gap-x-4 gap-y-8 px-4 *:py-4 *:rounded-xl *:border *:border-gray-300">
+        <div class="grid grid-cols-3 *:bg-gray-100 font-mediun lg:text-base text-sm text-center font-['Alan_Sans'] gap-x-4 gap-y-8 px-4 *:py-4 *:rounded-xl *:border *:border-gray-300">
           <span>Consultoria</span>
           <span>Pedagogia</span>
           <span>Vendas</span>
@@ -88,19 +87,19 @@ Além da área educacional, desenvolvi habilidades comerciais e de relacionament
     </div>
   </section>
 
-  <section id="jobs" class="flex flex-col pl-12 mt-[16rem] scroll-mt-24">
+  <section id="jobs" class="flex flex-col lg:pl-12 pl-6 lg:mt-[16rem] mt-[12rem] scroll-mt-24">
     <h1 class="font-bold font-['Roboto_Mono'] text-[4rem] text-gray-950">
       Trabalhos
     </h1>
 
-    <hr class="border-t border-2 -mt-1 w-[10%] border-[#014e3c]">  
+    <hr class="border-t border-2 -mt-1 w-[10%] border-[#014e3c] mb-16">  
 
-    <div class="grid grid-cols-2 pr-16 *:mt-24">
-      <img src="/images/lili.jpeg" class="max-w-[30rem] w-[80%] min-w-[20rem] border-4 border-black  rounded-3xl object-contain hover:scale-105 transition-transform"/>
+    <div class="grid lg:grid-cols-2 grid-rows-2 lg:pr-16 pr-8 lg:*:mt-24 *:mt-0">
+      <img src="/images/lili.jpeg" class="max-w-[30rem] w-[80%] min-w-[20rem] border-4 border-black rounded-3xl object-contain hover:scale-105 transition"/>
       <div>
-        <h3 class="font-bold text-[2.5rem] text-gray-900 font-['Alan_Sans']">Consultora Ademicon</h3>
+        <h3 class="lg:mt-0 -mt-[7rem] lg:text-start text-center font-bold lg:text-[2.5rem] text-[2.3rem] text-gray-900 font-['Alan_Sans']">Consultora Ademicon</h3>
 
-        <pre class="text-lg break-words whitespace-pre-wrap font-medium font-['Alan_Sans'] text-gray-600">
+        <pre class="text-lg break-words whitespace-pre-wrap font-medium font-['Alan_Sans'] text-gray-600 lg:mt-0 mt-2">
 Na Ademicon (Unidade de São José dos Pinhais, PR) – atuo como consultora de consórcios, conectando clientes às soluções financeiras ideais para imóveis, veículos e serviços. O processo começa com um diagnóstico detalhado das metas e da situação econômica de cada pessoa; a partir daí apresento as opções de consórcio mais adequadas, explicando prazos, parcelas, taxas e benefícios de forma clara e transparente.
 
 Durante a negociação utilizo escuta ativa e técnicas de persuasão para alinhar expectativas e superar objeções, garantindo confiança e alta taxa de conversão. Após a assinatura, faço acompanhamento pós‑venda, respondendo dúvidas e mantendo o cliente informado ao longo de todo o ciclo, o que gera relacionamentos duradouros e reforça meu compromisso com a excelência no atendimento e o sucesso financeiro dos clientes.       
@@ -109,20 +108,21 @@ Durante a negociação utilizo escuta ativa e técnicas de persuasão para alinh
 
 
       <div>
-        <h3 class="font-bold text-[1.8rem] text-gray-900 font-['Alan_Sans']">Vendedora Joalheria Diamond & Iraws</h3>
+        <h3 class="lg:mt-0 lg:text-start text-center mt-16 font-bold lg:text-[1.8rem] text-[1.7rem] text-gray-900 font-['Alan_Sans']">Vendedora Joalheria Diamond & Iraws</h3>
 
-        <pre class="text-lg break-words whitespace-pre-wrap font-medium font-['Alan_Sans'] text-gray-600">
-Realizei vendas diretas de joias, relógios e acessórios de luxo, proporcionando um atendimento altamente personalizado que incluía a análise das preferências do cliente, a sugestão de combinações de peças e a explicação detalhada das características de cada produto (materiais, pedras preciosas, garantia). Além disso, fui responsável pelo recebimento de mercadorias, conferência de notas fiscais e reposição de itens, garantindo que a loja estivesse sempre abastecida com as últimas coleções. Essa experiência aprimorou meus instintos de negociação, persuasão e construção de relacionamentos duradouros, habilidades essenciais para funções comerciais, ao mesmo tempo em que desenvolvi competências em gestão de inventário e atendimento ao cliente de alto padrão.
+        <pre class="text-lg break-words whitespace-pre-wrap font-medium font-['Alan_Sans'] text-gray-600 lg:mt-0 mt-2">
+Realizei vendas diretas de joias, relógios e acessórios de luxo, proporcionando um atendimento altamente personalizado que incluía a análise das preferências do cliente, a sugestão de combinações de peças e a explicação detalhada das características de cada produto (materiais, pedras preciosas, garantia). Além disso, fui responsável pelo recebimento de mercadorias, conferência de notas fiscais e reposição de itens, garantindo que a loja estivesse sempre abastecida. Essa experiência aprimorou meus instintos de negociação, persuasão e construção de relacionamentos longos, habilidades essenciais para funções comerciais, ao mesmo tempo em que desenvolvi competências em gestão de inventário e atendimento ao cliente de alto padrão.
         </pre>
       </div>
-      <img src="/images/shopping.webp" class="justify-self-end max-w-[30rem] w-[70%] min-w-[20rem] border-4 border-black  rounded-3xl object-contain hover:scale-105 transition-transform"/>
+      <img src="/images/shopping.webp" class="justify-self-end max-w-[30rem] w-[70%] min-w-[20rem] border-4 border-black  rounded-3xl object-contain hover:scale-105 transition-transform lg:mb-0 mb-[14rem]"/>
+
 
 
       <img src="/images/sesi.webp" class="max-w-[30rem] w-[70%] min-w-[20rem] border-4 border-black  rounded-3xl object-contain hover:scale-105 transition-transform"/>
       <div>
-        <h3 class="font-bold text-[1.8rem] text-gray-900 font-['Alan_Sans']">Monitora Colégio Sesi da Indústria</h3>
+        <h3 class="font-bold lg:text-start text-center lg:mt-0 mt-8 lg:text-[1.8rem] text-[1.7rem] text-gray-900 font-['Alan_Sans']">Monitora Colégio Sesi da Indústria</h3>
 
-        <pre class="text-lg break-words whitespace-pre-wrap font-medium font-['Alan_Sans'] text-gray-600">
+        <pre class="lg:mt-0 mt-2 text-lg break-words whitespace-pre-wrap font-medium font-['Alan_Sans'] text-gray-600">
 Atuação como monitora escolar no SESI, responsável pelo controle e organização do fluxo de alunos nos horários de entrada e saída, garantindo o cumprimento das normas institucionais. Realização de conferência de uniformes conforme regulamento interno e apoio na organização, separação e disponibilização de materiais didáticos aos estudantes. Contribuição para a manutenção da disciplina, organização do ambiente escolar e suporte às rotinas administrativas básicas da unidade.
         </pre>
       </div>
@@ -130,27 +130,27 @@ Atuação como monitora escolar no SESI, responsável pelo controle e organizaç
     </div>
   </section>
 
-  <section id="exp" class="flex flex-col pl-12 mt-[16rem] mb-[10rem] scroll-mt-24">
+  <section id="exp" class="flex flex-col pl-12 lg:mt-[16rem] mt-[12rem] scroll-mt-24">
     <h1 class="font-bold font-['Roboto_Mono'] text-[4rem] text-gray-950">
       Experiência
     </h1>
 
     <hr class="border-t border-2 -mt-1 w-[10%] border-[#014e3c]">  
 
-    <div class="flex mt-24 w-[75%] p-8">
-      <div class="flex flex-col items-center">
+    <div class="flex lg:mt-24 mt-16 lg:w-[75%] w-full lg:p-8 p-4">
+      <div class="flex flex-col items-center lg:ml-0 -ml-12">
         <div class="h-4 w-4 rounded-full bg-[#518f81]"/>
         <div class="w-[2px] bg-gray-300 flex-1"/>
       </div>
 
       <!-- Items here -->
-      <div class="flex flex-col *:ml-12 *:max-w-[36rem] gap-16">
+      <div class="flex flex-col lg:*:ml-12 ml-6 *:max-w-[36rem] gap-16 lg:pr-0 pr-8">
         <div>
           <h5 class="font-['Alan_Sans'] text-sm text-[#014e3c]">2025 - Presente</h5>
           <h3 class="font-['Alan_Sans'] font-semibold text-2xl mb-4">Ademicon</h3>
 
           <pre class="text-lg break-words whitespace-pre-wrap font-medium font-['Alan_Sans'] text-gray-600">
-  Consultora de consórcios na unidade de São José dos Pinhais (PR). Identifico a solução financeira ideal (imóveis, veículos, serviços) após diagnóstico das metas do cliente, seleciono modalidades que equilibram prazo, parcela e taxa, e utilizo escuta ativa e persuasão para fechar negócios. Realizo acompanhamento pós‑venda, esclarecendo dúvidas e garantindo a satisfação ao longo de todo o ciclo.
+Consultora de consórcios na unidade de São José dos Pinhais (PR). Identifico a solução financeira ideal (imóveis, veículos, serviços) após diagnóstico das metas do cliente, seleciono modalidades que equilibram prazo, parcela e taxa, e utilizo escuta ativa e persuasão para fechar negócios. Realizo acompanhamento pós‑venda, esclarecendo dúvidas e garantindo a satisfação ao longo de todo o ciclo.
           </pre>
         </div>
 
@@ -159,7 +159,7 @@ Atuação como monitora escolar no SESI, responsável pelo controle e organizaç
           <h3 class="font-['Alan_Sans'] font-semibold text-2xl mb-4">Colégio Sesi da Indústria</h3>
 
           <pre class="text-lg break-words whitespace-pre-wrap font-medium font-['Alan_Sans'] text-gray-600">
-  Monitora de turmas do Ensino Médio em Curitiba (PR). Apoio a alfabetização e o desenvolvimento de leitura e escrita, planejei atividades interativas adaptadas às necessidades individuais e acompanho o progresso via avaliações, fornecendo feedback a alunos e pais.
+Monitora de turmas do Ensino Médio em Curitiba (PR). Apoio a alfabetização e o desenvolvimento de leitura e escrita, planejei atividades interativas adaptadas às necessidades individuais e acompanho o progresso via avaliações, fornecendo feedback a alunos e pais.
           </pre>
         </div>
 
@@ -259,38 +259,43 @@ Instrutora de caixa em Betim (MG). Treinava novos funcionários, operava caixa, 
 
   </section>
 
-  <section id="contact" class="flex flex-col mt-[16rem] scroll-mt-24">
+  <section id="contact" class="flex flex-col lg:mt-[16rem] mt-[12rem] scroll-mt-24">
     <div class="flex flex-col bg-gray-50 border border-gray-300 w-full p-12 text-center gap-4 items-center">
       <h2 class="text-[1.8rem] font-bold font-['Bpmf_Huninn']">Vamos Trabalhar juntos?</h2>
       <span>Obrigado pela visita! Estou sempre aberta a novas oportunidades.</span>
 
-      <div class="grid grid-rows-2 grid-flow-col *:px-[2rem] text-start gap-6 mt-12">
+      <div class="lg:grid flex grid-rows-2 grid-flow-col lg:*:px-[2rem] text-start gap-6 mt-12">
         <a target="_blank" href="https://instagram.com/lilianne.ademicon" class="hover:scale-125 transition duration-500">
           <img src="/images/instagram.png" alt="instagram" class="h-12"/>
         </a>
-        <span class="text-xs -ml-[2.4rem]">@lilianne.ademicon</span>
+        <span class="lg:block hidden text-xs -ml-[2.4rem]">@lilianne.ademicon</span>
 
         <a target="_blank" href="https://wa.me/message/EZ47PSBRHMD7D1" class="hover:scale-125 transition duration-500">
           <img src="/images/whatsapp.png" alt="whatsapp" class="h-12"/>
         </a>
-        <span class="text-xs -ml-[1.5rem]">+41 99515-8753</span>
+        <span class="lg:block hidden text-xs -ml-[1.5rem]">+41 99515-8753</span>
 
         <a target="_blank" href="mailto:contato@liliane.digital" class="hover:scale-125 transition duration-500">
           <img src="/images/email.png" alt="email" class="h-12"/>
         </a>
-        <span class="text-xs -ml-[2.2rem]">contato@liliane.digital</span>
+        <span class="lg:block hidden text-xs -ml-[2.2rem]">contato@liliane.digital</span>
 
         <a target="_blank" href="https://linkedin.com/in/liliane-r-26945015b" class="hover:scale-125 transition duration-500">
           <img src="/images/linkedin.png" alt="linkedin" class="h-12"/>
         </a>
-        <span class="-ml-[2rem] text-xs">@liliane-r-26945015b</span>
+        <span class="lg:block hidden -ml-[2rem] text-xs">@liliane-r-26945015b</span>
       </div>
 
+
+      <h4 class="lg:hidden block mt-2 font-bold text-lg text-red-900">
+        * Clique na imagem para abrir o link *
+      </h4>
     </div>
   </section>
 
   <footer id="info" class="flex flex-col w-full h-[6rem] items-center justify-center">
-    <a href="https://github.com/ArthurSpeziali/LilianePortifolio" target="_blank" class="text-sm underline text-indigo-800">Este site é Open-Source, confira o meu GitHub.</a>
+    <a href="https://github.com/ArthurSpeziali/LilianePortifolio" target="_blank" class="lg:text-sm text-base underline text-indigo-800">Este site é Open-Source, confira o meu GitHub.</a>
     <span class="text-xs text-gray-600 mt-2"> 2026 Arthur Speziali. Todos os direitos reservados © Sobre a licensa GPLv3.</span>
   </footer>
+
 </html>
