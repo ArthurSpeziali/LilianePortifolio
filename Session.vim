@@ -15,7 +15,7 @@ else
 endif
 badd +1 lib/liliane_web/router.ex
 badd +7 lib/liliane_web/controllers/page_controller.ex
-badd +140 lib/liliane_web/controllers/page_html/home.html.heex
+badd +3 lib/liliane_web/controllers/page_html/home.html.heex
 badd +33 lib/liliane_web/components/layouts/root.html.heex
 badd +1 .gitignore
 badd +12 assets/tailwind.config.js
@@ -91,17 +91,15 @@ sil! 21,53fold
 sil! 55,88fold
 sil! 90,131fold
 sil! 133,260fold
-sil! 262,290fold
-sil! 292,295fold
+sil! 262,294fold
+sil! 296,299fold
 let &fdl = &fdl
-133
-sil! normal! zo
-let s:l = 1 - ((0 * winheight(0) + 15) / 31)
+let s:l = 3 - ((2 * winheight(0) + 11) / 22)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1
-normal! 0
+keepjumps 3
+normal! 014|
 tabnext
 edit lib/liliane_web/components/layouts/root.html.heex
 argglobal
