@@ -15,7 +15,7 @@ else
 endif
 badd +1 lib/liliane_web/router.ex
 badd +7 lib/liliane_web/controllers/page_controller.ex
-badd +267 lib/liliane_web/controllers/page_html/home.html.heex
+badd +293 lib/liliane_web/controllers/page_html/home.html.heex
 badd +33 lib/liliane_web/components/layouts/root.html.heex
 badd +1 .gitignore
 badd +12 assets/tailwind.config.js
@@ -83,18 +83,22 @@ setlocal foldminlines=1
 setlocal foldnestmax=20
 setlocal foldenable
 silent! normal! zE
-sil! 4,17fold
-sil! 19,52fold
-sil! 54,87fold
-sil! 89,129fold
-sil! 131,258fold
+sil! 4,19fold
+sil! 21,54fold
+sil! 56,89fold
+sil! 91,131fold
+sil! 133,260fold
+sil! 262,290fold
+sil! 292,295fold
 let &fdl = &fdl
-let s:l = 267 - ((136 * winheight(0) + 16) / 32)
+292
+sil! normal! zo
+let s:l = 296 - ((295 * winheight(0) + 16) / 32)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 267
-normal! 098|
+keepjumps 296
+normal! 07|
 tabnext
 edit lib/liliane_web/components/layouts/root.html.heex
 argglobal
